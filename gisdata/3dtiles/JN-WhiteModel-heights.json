@@ -1,0 +1,33 @@
+{
+  "name": "JN-WhiteModel",
+  "version": 1,
+  "source": "public/models/3dtiles/JN-WhiteModel",
+  "tileFiles": 15,
+  "tileContents": 17,
+  "cols": 160,
+  "rows": 128,
+  "minX": -22448.388671875,
+  "minZ": -17674.236328125,
+  "maxX": 22411.6953125,
+  "maxZ": 17645.416015625,
+  "cellX": 280.3755249023437,
+  "cellZ": 275.9347839355469,
+  "vertexCount": 2799096,
+  "sampleCount": 4208,
+  "emptyCells": 16272,
+  "heightMin": 2.818375587463379,
+  "heightMeanOfCells": 118.20442199707031,
+  "tallestCell": {
+    "col": 69,
+    "row": 62,
+    "x": -2962.28969116211,
+    "z": -428.3123321533203,
+    "meanH": 118.20442199707031
+  },
+  "planes": [
+    "mean",
+    "min",
+    "count"
+  ],
+  "note": "head 64 B: HFG1|ver|cols|rows|minX|minZ|cellX|cellZ|vertexCount|tileContents|sampleCount|maxCellCol|maxCellRow|maxCellMeanH|outOfRange"
+}

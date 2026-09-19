@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>十三期 KML 自证资产</name>
+    <description>点 / 线 / 面（含 extrude）三种几何，全部离线。</description>
+
+    <Style id="s-point">
+      <IconStyle><color>ff00d7ff</color><scale>1.2</scale></IconStyle>
+      <LabelStyle><color>ff00d7ff</color><scale>1.0</scale></LabelStyle>
+    </Style>
+    <Style id="s-line">
+      <LineStyle><color>ff32ff8c</color><width>4</width></LineStyle>
+    </Style>
+    <Style id="s-poly">
+      <LineStyle><color>ffffb300</color><width>3</width></LineStyle>
+      <PolyStyle><color>66ffb300</color></PolyStyle>
+    </Style>
+
+    <!-- ① 点 -->
+    <Placemark>
+      <name>KML-POINT</name>
+      <styleUrl>#s-point</styleUrl>
+      <Point><coordinates>116.985169,36.701345,60.0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>KML-POINT-2</name>
+      <styleUrl>#s-point</styleUrl>
+      <Point><coordinates>116.975169,36.694345,60.0</coordinates></Point>
+    </Placemark>
+
+    <!-- ② 线 -->
+    <Placemark>
+      <name>KML-LINE</name>
+      <styleUrl>#s-line</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>
+          116.971169,36.687345,0.0 116.979169,36.683345,0.0 116.987169,36.687345,0.0 116.991169,36.695345,0.0 116.985169,36.699345,0.0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- ③ 面（含 extrude 挤出体） -->
+    <Placemark>
+      <name>KML-POLYGON</name>
+      <styleUrl>#s-poly</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs><LinearRing><coordinates>
+          117.001169,36.703345,0.0 117.013169,36.703345,0.0 117.013169,36.693345,0.0 117.001169,36.693345,0.0 117.001169,36.703345,0.0
+        </coordinates></LinearRing></outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

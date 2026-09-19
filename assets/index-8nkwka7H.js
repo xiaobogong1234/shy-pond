@@ -1,0 +1,1 @@
+import{i as b}from"./cesium2s-TV_G_QRL.js";function e(n,f={}){if(n.bbox!=null&&f.recompute!==!0)return n.bbox;const i=[1/0,1/0,-1/0,-1/0];return b(n,t=>{i[0]>t[0]&&(i[0]=t[0]),i[1]>t[1]&&(i[1]=t[1]),i[2]<t[0]&&(i[2]=t[0]),i[3]<t[1]&&(i[3]=t[1])}),i}export{e as b};
